@@ -1,9 +1,10 @@
 @extends('layouts.app')
 @section('content')
 <div class="row">
+<div class="container">
 	<center><h1>Data Orang Tua</h1></center>
 	<div class="panel panel-primary">
-		<div class="panel-heading">Data Orangtua</div>
+		<div class="panel-heading">Data Orangtua
 		<div class="panel-title pull-right">
 		<a href="/orangtua/create">Tambah Data</a></div>
 	</div>
@@ -55,4 +56,5 @@
 	</div>
 	</div>
 </div>	
+</div>
 @endsection

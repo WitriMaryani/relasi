@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
 <div class="row">
-	<center><h1>Data Orang Tua</h1></center>
+<div class="container">
+	<center><h1>Edit Data Orang Tua</h1></center>
 	<div class="panel panel-primary">
 		<div class="panel-heading">Data Orangtua
 		<div class="panel-title pull-right">
@@ -39,5 +40,6 @@
 			</form>
 		</div>
 	</div>
+</div>
 </div>
 @endsection
