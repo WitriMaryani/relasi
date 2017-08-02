@@ -31,6 +31,8 @@ Route::get('/percobaan2','MyController@tampilan');
 Route::get('/percobaan3','MyController@tampilanmodel');
 Route::get('/percobaan4','MyController@tampilanmodel2');
 Route::resource('orangtua','OrangTuaController');
+Route::resource('author','AuthorController');
+Route::resource('book','BookController');
 
 Auth::routes();
 
