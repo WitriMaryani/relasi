@@ -28,7 +28,7 @@
 				</div>
 				<div class="form-group">
 					<label class="control-lable">Cover</label>
-					<input type="file" name="cover" value="{{asset('img/'.$book->cover.'')}}" width="70" height="70" class="form-control" readonly="">
+					<img src="{{asset('img/'.$book->cover.'')}}" name="cover" width="100" height="100" readonly="">
 				</div>
 			</form>
 		</div>

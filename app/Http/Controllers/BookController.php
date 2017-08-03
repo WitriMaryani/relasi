@@ -100,12 +100,11 @@ class BookController extends Controller
         $book->author_id = $request->b;
         $book->amound = $request->c;
         if ($request->hasFile('cover')) {
-            $book = $request->file('cover');
-            $extension = $book->getClientOriginalExtension();
-            $filename = str_random(6).','.$extension;
-            $destinationPath = public_path() .
-                DIRECTORY_SEPARATOR . 'img';
-            $book->move($destinationPath, $filename);
+            $file = $request->file('cover');
+            $extension = $file->getClientOriginalExtension();
+            $filename = str_random(6).'.'.$extension;
+            $destinationPath = public_path() .DIRECTORY_SEPARATOR . 'img';
+            $file->move($destinationPath, $filename);
             $book->cover = $filename;   
         }
         $book->save();

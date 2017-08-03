@@ -10,7 +10,7 @@
 		</div>
 
 		<div class="panel-body">
-			<form action="{{route('book.update',$book->id)}}" method="post">
+			<form action="{{route('book.update',$book->id)}}" method="post" enctype="multipart/form-data">
 				<input type="hidden" name="_method" value="PUT">
 				<input type="hidden" name="_token" value="{{csrf_token()}}">
 
@@ -32,7 +32,7 @@
 				</div>
 				<div class="form-group">
 					<label class="control-lable">Cover</label>
-					<input type="file" name="cover" value="{{asset('img/'.$book->cover.'')}}" width="70" height="70" class="form-control" required="">
+					<input type="file" name="cover" value="{{$book->cover}}" class="form-control" required="">
 				</div>
 				<div class="form-group">
 					<button type="submit" class="btn btn-success">Simpan</button>
